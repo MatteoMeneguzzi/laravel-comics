@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOMEPAGE
 Route::get('/', function () {
-    return view('home');
+
+    // card statiche
+    $cards = config('dc-database');
+    // dump($cards);
+
+
+    return view('home', ['cards' => $cards]);
 })->name('home');
+
+// NEWS
+Route::get('/news', function () {
+
+
+    return view('news');
+})->name('news');

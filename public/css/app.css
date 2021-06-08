@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  padding: 20px 0px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.container .logo {
+  margin-right: 50px;
+}
+
+.container nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+  color: #1c1c1c;
+  text-transform: uppercase;
+}
+
+.container nav ul li a.active {
+  color: #427dec;
+  height: 100%;
+  padding: 59px 0px;
+  border-bottom: 5px solid #427dec;
+}
+
+main {
+  background-color: #1c1c1c;
+  text-align: center;
+  border-bottom: 15px solid #427dec;
+}
+main .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  text-align: left;
+  margin-bottom: -10px;
+}
+main .container .cards .card {
+  width: calc((100% / 6) - 40px);
+  margin: 0px 20px;
+}
+main .container .cards .card .img-container {
+  margin-bottom: 0px;
+}
+main .container .cards .card .title {
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+main button {
+  min-width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #427dec;
+  border: 2px solid #427dec;
+  font-weight: 600;
+}
+main button a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+main section {
+  color: #fff;
+  padding: 50px 0;
+}
+main section h1 {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+main section * {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #303030;
+  padding: 20px 0px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container button {
+  padding: 15px;
+  background-color: #303030;
+  border: 2px solid #427dec;
+  font-size: 18px;
+}
+
+footer .container button a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer .container ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+footer .container ul a {
+  margin-left: 15px;
+  color: #427dec;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+}

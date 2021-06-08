@@ -1,0 +1,56 @@
+main {
+    background-color: $back-col-two;
+    text-align: center;
+    border-bottom: 15px solid $main-col;
+    .container .cards {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0px;
+        text-align: left;
+        margin-bottom: -10px;
+
+        .card {
+            width: calc((100% / 6) - 40px);
+            margin: 0px 20px;
+
+            .img-container {
+                margin-bottom: 0px;
+            }
+
+            .title {
+                color: $text-col-two;
+                margin-bottom: 25px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    button {
+        min-width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: $main-col;
+        border: 2px solid $main-col;
+        font-weight: 600;
+
+        a {
+            text-decoration: none;
+            color: $text-col-two;
+            text-transform: uppercase;
+        }
+    }
+
+    section {
+        color: $text-col-two;
+        padding: 50px 0;
+
+        h1 {
+            border-bottom: 1px solid $text-col-two;
+            padding-bottom: 15px;
+        }
+
+        * {
+            margin-bottom: 20px;
+        }
+    }
+}
