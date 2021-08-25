@@ -52,31 +52,37 @@ header .container {
   border-bottom: 5px solid #427dec;
 }
 
-main {
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body main {
   background-color: #1c1c1c;
   text-align: center;
   border-bottom: 15px solid #427dec;
+  flex-grow: 1;
 }
-main .container .cards {
+body main .container .cards {
   display: flex;
   flex-wrap: wrap;
   padding: 50px 0px;
   text-align: left;
   margin-bottom: -10px;
 }
-main .container .cards .card {
+body main .container .cards .card {
   width: calc((100% / 6) - 40px);
   margin: 0px 20px;
 }
-main .container .cards .card .img-container {
+body main .container .cards .card .img-container {
   margin-bottom: 0px;
 }
-main .container .cards .card .title {
+body main .container .cards .card .title {
   color: #fff;
   margin-bottom: 25px;
   line-height: 20px;
 }
-main button {
+body main button {
   min-width: 200px;
   padding: 10px;
   margin-bottom: 10px;
@@ -84,20 +90,20 @@ main button {
   border: 2px solid #427dec;
   font-weight: 600;
 }
-main button a {
+body main button a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
 }
-main section {
+body main section {
   color: #fff;
   padding: 50px 0;
 }
-main section h1 {
+body main section h1 {
   border-bottom: 1px solid #fff;
   padding-bottom: 15px;
 }
-main section * {
+body main section * {
   margin-bottom: 20px;
 }
 

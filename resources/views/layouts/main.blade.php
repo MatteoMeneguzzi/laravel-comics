@@ -14,14 +14,14 @@
     </head>
     <body>
         
-           @include('partials.header')
+           
+               @include('partials.header')
+                       
+                       <main>
+                @yield('content')
+                       </main>
+                @include('partials.footer')
         
-        <main>
-            @yield('content')
-        </main>
-
-        
-            @include('partials.footer')
        
         {{-- JS --}}
         <script src="{{ asset('js/app.js') }}"></script>
